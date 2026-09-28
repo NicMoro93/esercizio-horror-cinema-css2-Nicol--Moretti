@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Horror</title>
+</head>
+<body>
+  <header>
+    <h1>Cinema Horror</h1>
+    <p>Una notte da brividi sul grande schermo</p>
+  </header>
+  <main>
+    <section aria-labelledby="film">
+      <h2 id="film">Film in programmazione</h2>
+      <article>
+        <h3>La notte dei misteri</h3>
+        <p>Un gruppo di amici si ritrova in una casa isolata, dove ogni ombra nasconde un segreto.</p>
+        <p><strong>Orari:</strong> 18:30 · 21:00 · 23:15</p>
+      </article>
+      <article>
+        <h3>L'ultimo corridoio</h3>
+        <p>In un ospedale abbandonato, una porta chiusa cela una presenza inquietante.</p>
+        <p><strong>Orari:</strong> 19:00 · 21:30</p>
+      </article>
+    </section>
+    <section aria-labelledby="prenota">
+      <h2 id="prenota">Prenota i tuoi biglietti</h2>
+      <form action="#" method="get">
+        <label for="titolo">Scegli un film</label>
+        <select id="titolo" name="titolo" required>
+          <option value="">Seleziona un film</option>
+          <option value="notte-dei-misteri">La notte dei misteri</option>
+          <option value="ultimo-corridoio">L'ultimo corridoio</option>
+        </select>
+        <label for="biglietti">Numero di biglietti</label>
+        <input id="biglietti" name="biglietti" type="number" min="1" max="10" value="1" required>
+        <button type="submit">Prenota</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>&copy; 2025 Cinema Horror</p></footer>
+</body>
+</html>

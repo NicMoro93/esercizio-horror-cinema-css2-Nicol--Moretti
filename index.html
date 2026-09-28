@@ -3,41 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinema Horror</title>
+  <title>Cinema Horror - La Maratona di Mezzanotte</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Cinema Horror</h1>
-    <p>Una notte da brividi sul grande schermo</p>
+
+  <header class="navbar">
+    <div class="logo">
+        <span class="logo-icon">🎬</span>
+        <span class="logo-text">Horror Cinema</span>
+    </div>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="programmazione">Programmazione</a></li>
+            <li><a href="recensione">Recensioni</a></li>
+            <li><a href="biglietti" class="btn-nav">Biglietti</a></li>
+        </ul>
+    </nav>       
   </header>
+
   <main>
-    <section aria-labelledby="film">
-      <h2 id="film">Film in programmazione</h2>
-      <article>
-        <h3>La notte dei misteri</h3>
-        <p>Un gruppo di amici si ritrova in una casa isolata, dove ogni ombra nasconde un segreto.</p>
-        <p><strong>Orari:</strong> 18:30 · 21:00 · 23:15</p>
-      </article>
-      <article>
-        <h3>L'ultimo corridoio</h3>
-        <p>In un ospedale abbandonato, una porta chiusa cela una presenza inquietante.</p>
-        <p><strong>Orari:</strong> 19:00 · 21:30</p>
-      </article>
+    <section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">Notte di Halloween</span> 
+        <h1>Maratona di Mezzanotte</h1>
+        <p>Vivi la notte più spaventosa dell'anno sul grande schermo. Una selezione imperdibile dei grandi classici del cinema dell'orrore ti aspetta.</p>
+        <a href="#biglietti" class="btn-hero">Prenota i Biglietti</a>
+    </div>
     </section>
-    <section aria-labelledby="prenota">
-      <h2 id="prenota">Prenota i tuoi biglietti</h2>
-      <form action="#" method="get">
-        <label for="titolo">Scegli un film</label>
-        <select id="titolo" name="titolo" required>
-          <option value="">Seleziona un film</option>
-          <option value="notte-dei-misteri">La notte dei misteri</option>
-          <option value="ultimo-corridoio">L'ultimo corridoio</option>
-        </select>
-        <label for="biglietti">Numero di biglietti</label>
-        <input id="biglietti" name="biglietti" type="number" min="1" max="10" value="1" required>
-        <button type="submit">Prenota</button>
-      </form>
+
+    <section class="catalogo-sezioni">
+        <h2>I Grandi Classici della Maratona</h2>
+        <div class="lista-prodotti">
+            <article class="film-card">
+                <div class="poster">
+                    <span class="rating">VM 18</span>
+                    <img src="" class="poster-img">
+                </div>
+                <div class="film-info">
+                    <h3>La Villa Maledetta</h3>
+                    <p class="genere">Cult Anni '80 | Horror Psicologico</p>
+                    <p class="recensione">"Un capolavoro del terrore atmosferico. La tensione cresce inesorabile fino a un finale mozzafiato che vi terrà svegli tutta la notte."</p>
+                    <span class="voto">Voto: 9.5/10</span>
+                    <a href="#biglietti" class="btn-card">Prenota</a>
+                </div>
+            </article>
+
+            <article>
+                
+            </article>
+        </div>
     </section>
+
+
+
+
   </main>
   <footer><p>&copy; 2025 Cinema Horror</p></footer>
 </body>
